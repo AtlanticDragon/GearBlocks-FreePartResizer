@@ -1,0 +1,6 @@
+<Project>
+  <Target Name="FailIfMelonManagedMissing" BeforeTargets="ResolveReferences"
+          Condition="'$(MelonLoader)'=='' Or !Exists('$(MelonLoader)/net6/MelonLoader.dll')">
+    <Error Text="MelonLoader is not set or invalid. Set it in Directory.Build.props.local (or UserPaths.props)." />
+  </Target>
+</Project>

@@ -1,0 +1,13 @@
+<Project>
+    <PropertyGroup>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+        <GenerateDependencyFile>false</GenerateDependencyFile>
+        <GenerateRuntimeConfigurationFiles>false</GenerateRuntimeConfigurationFiles>
+        <GameFolder></GameFolder>
+    </PropertyGroup>
+
+    <Import Project="UserPaths.props" Condition="Exists('UserPaths.props')" />
+    <PropertyGroup>
+        <MelonLoader>$(GameFolder)/MelonLoader</MelonLoader>
+    </PropertyGroup>
+</Project>

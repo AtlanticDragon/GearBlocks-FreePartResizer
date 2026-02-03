@@ -6,21 +6,6 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <PropertyGroup>
-    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
-    <GenerateDependencyFile>false</GenerateDependencyFile>
-    <GenerateRuntimeConfigurationFiles>false</GenerateRuntimeConfigurationFiles>
-  </PropertyGroup>
-  
-  <Import Project="../../UserPaths.props" Condition="Exists('../../UserPaths.props')" />
-  <PropertyGroup>
-    <MelonLoader>$(GameFolder)/MelonLoader</MelonLoader>
-  </PropertyGroup>
-  <Target Name="FailIfMelonManagedMissing" BeforeTargets="ResolveReferences"
-          Condition="'$(MelonLoader)'=='' Or !Exists('$(MelonLoader)/net6/MelonLoader.dll')">
-    <Error Text="MelonLoader is not set or invalid. Set it in Directory.Build.props.local (or UserPaths.props)." />
-  </Target>
-
   <ItemGroup>
     <Reference Include="MelonLoader">
       <HintPath>$(MelonLoader)/net6/MelonLoader.dll</HintPath>

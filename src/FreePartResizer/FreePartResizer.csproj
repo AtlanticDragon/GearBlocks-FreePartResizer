@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <Import Project="../../UserPaths.props" Condition="Exists('../../UserPaths.props')" />
+  <PropertyGroup>
+    <MelonLoader>$(GameFolder)/MelonLoader</MelonLoader>
+  </PropertyGroup>
+  <Target Name="FailIfMelonManagedMissing" BeforeTargets="ResolveReferences"
+          Condition="'$(MelonLoader)'=='' Or !Exists('$(MelonLoader)/net6/MelonLoader.dll')">
+    <Error Text="MelonLoader is not set or invalid. Set it in Directory.Build.props.local (or UserPaths.props)." />
+  </Target>
+
+  <ItemGroup>
+    <Reference Include="MelonLoader">
+      <HintPath>$(MelonLoader)/net6/MelonLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>$(MelonLoader)/net6/Il2CppInterop.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>$(MelonLoader)/Il2CppAssemblies/Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSmashHammer">
+      <HintPath>$(MelonLoader)/Il2CppAssemblies/Il2CppSmashHammer.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSmashHammer.GearBlocks">
+      <HintPath>$(MelonLoader)/Il2CppAssemblies/Il2CppSmashHammer.GearBlocks.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(MelonLoader)/Il2CppAssemblies/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

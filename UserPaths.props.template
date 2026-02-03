@@ -1,0 +1,5 @@
+<Project>
+    <PropertyGroup>
+        <GameFolder>PATH_TO_GAME_FOLDER</GameFolder>
+    </PropertyGroup>
+</Project>

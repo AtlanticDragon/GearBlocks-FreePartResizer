@@ -6,6 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <GenerateRuntimeConfigurationFiles>false</GenerateRuntimeConfigurationFiles>
+  </PropertyGroup>
+  
   <Import Project="../../UserPaths.props" Condition="Exists('../../UserPaths.props')" />
   <PropertyGroup>
     <MelonLoader>$(GameFolder)/MelonLoader</MelonLoader>
@@ -18,21 +24,27 @@
   <ItemGroup>
     <Reference Include="MelonLoader">
       <HintPath>$(MelonLoader)/net6/MelonLoader.dll</HintPath>
+      <Private>false</Private>
     </Reference>
     <Reference Include="Il2CppInterop.Runtime">
       <HintPath>$(MelonLoader)/net6/Il2CppInterop.Runtime.dll</HintPath>
+      <Private>false</Private>
     </Reference>
     <Reference Include="Il2Cppmscorlib">
       <HintPath>$(MelonLoader)/Il2CppAssemblies/Il2Cppmscorlib.dll</HintPath>
+      <Private>false</Private>
     </Reference>
     <Reference Include="Il2CppSmashHammer">
       <HintPath>$(MelonLoader)/Il2CppAssemblies/Il2CppSmashHammer.dll</HintPath>
+      <Private>false</Private>
     </Reference>
     <Reference Include="Il2CppSmashHammer.GearBlocks">
       <HintPath>$(MelonLoader)/Il2CppAssemblies/Il2CppSmashHammer.GearBlocks.dll</HintPath>
+      <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>$(MelonLoader)/Il2CppAssemblies/UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
     </Reference>
   </ItemGroup>
 

@@ -1,0 +1,12 @@
+C:\Users\Benjamin\source\repos\GearBlocks-FreePartResizer\src\FreePartResizer\bin\Debug\net6.0\FreePartResizer.dll
+C:\Users\Benjamin\source\repos\GearBlocks-FreePartResizer\src\FreePartResizer\bin\Debug\net6.0\FreePartResizer.pdb
+C:\Users\Benjamin\source\repos\GearBlocks-FreePartResizer\src\FreePartResizer\obj\Debug\net6.0\FreePartResizer.csproj.AssemblyReference.cache
+C:\Users\Benjamin\source\repos\GearBlocks-FreePartResizer\src\FreePartResizer\obj\Debug\net6.0\FreePartResizer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Benjamin\source\repos\GearBlocks-FreePartResizer\src\FreePartResizer\obj\Debug\net6.0\FreePartResizer.AssemblyInfoInputs.cache
+C:\Users\Benjamin\source\repos\GearBlocks-FreePartResizer\src\FreePartResizer\obj\Debug\net6.0\FreePartResizer.AssemblyInfo.cs
+C:\Users\Benjamin\source\repos\GearBlocks-FreePartResizer\src\FreePartResizer\obj\Debug\net6.0\FreePartResizer.csproj.CoreCompileInputs.cache
+C:\Users\Benjamin\source\repos\GearBlocks-FreePartResizer\src\FreePartResizer\obj\Debug\net6.0\FreePartResizer.sourcelink.json
+C:\Users\Benjamin\source\repos\GearBlocks-FreePartResizer\src\FreePartResizer\obj\Debug\net6.0\FreePartResizer.dll
+C:\Users\Benjamin\source\repos\GearBlocks-FreePartResizer\src\FreePartResizer\obj\Debug\net6.0\refint\FreePartResizer.dll
+C:\Users\Benjamin\source\repos\GearBlocks-FreePartResizer\src\FreePartResizer\obj\Debug\net6.0\FreePartResizer.pdb
+C:\Users\Benjamin\source\repos\GearBlocks-FreePartResizer\src\FreePartResizer\obj\Debug\net6.0\ref\FreePartResizer.dll
